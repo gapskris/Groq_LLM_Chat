@@ -29,16 +29,16 @@
         }
         .chat-container {
             flex: 1 1 auto;
-            width: 100%;
-            max-width: 700px;
-            margin: 32px auto 0 auto;
-            background: rgba(255,255,255,0.85);
-            padding: 32px 32px 20px 32px;
-            border-radius: 28px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
-            border: 1px solid rgba(255,255,255,0.18);
-            backdrop-filter: blur(12px) saturate(1.2);
-            -webkit-backdrop-filter: blur(12px) saturate(1.2);
+            width: 100vw;
+            max-width: 100vw;
+            margin: 0;
+            background: rgba(255,255,255,0.92);
+            padding: 8px 2vw 8px 2vw;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+            border: 1px solid rgba(255,255,255,0.10);
+            backdrop-filter: blur(6px) saturate(1.1);
+            -webkit-backdrop-filter: blur(6px) saturate(1.1);
             position: relative;
             min-height: 0;
             display: flex;
@@ -49,7 +49,7 @@
             color: #2575fc;
             letter-spacing: 1px;
             margin-bottom: 18px;
-            font-size: 2.2em;
+            font-size: 1.3em;
             font-weight: 800;
             text-shadow: 0 2px 12px #b2bfff33;
             background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
@@ -59,17 +59,17 @@
         .messages {
             flex: 1 1 auto;
             min-height: 0;
-            max-height: 50vh;
+            max-height: 28vh;
             overflow-y: auto;
             border: 1.5px solid #b2bfff;
-            padding: 18px 10px 18px 10px;
-            margin-bottom: 18px;
+            padding: 6px 4px 6px 4px;
+            margin-bottom: 8px;
             background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
-            border-radius: 18px;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            box-shadow: 0 2px 12px #b2bfff22;
+            gap: 4px;
+            box-shadow: 0 1px 4px #b2bfff22;
         }
         .message {
             display: flex;
@@ -86,13 +86,13 @@
             }
         }
         .bubble {
-            padding: 14px 18px;
-            border-radius: 18px;
-            max-width: 80%;
+            padding: 7px 10px;
+            border-radius: 10px;
+            max-width: 95%;
             word-break: break-word;
-            font-size: 1.12em;
-            box-shadow: 0 2px 8px rgba(31,38,135,0.09);
-            margin-bottom: 2px;
+            font-size: 0.98em;
+            box-shadow: 0 1px 4px rgba(31,38,135,0.07);
+            margin-bottom: 1px;
             transition: box-shadow 0.2s;
         }
         .user-bubble {
@@ -110,17 +110,17 @@
             box-shadow: 0 2px 12px #43e97b33;
         }
         .avatar {
-            width: 40px;
-            height: 40px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             background: #e0e7ff;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.6em;
+            font-size: 1em;
             font-weight: bold;
-            margin: 0 12px;
-            box-shadow: 0 2px 8px #b2bfff33;
+            margin: 0 6px;
+            box-shadow: 0 1px 4px #b2bfff33;
         }
         .user .avatar {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -137,13 +137,13 @@
         .input-row {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            margin-bottom: 8px;
+            gap: 4px;
+            margin-bottom: 4px;
             position: relative;
             background: linear-gradient(90deg, #e0e7ff 0%, #f8fafc 100%);
-            border-radius: 14px;
-            padding: 14px 12px 10px 12px;
-            box-shadow: 0 2px 8px #b2bfff22;
+            border-radius: 8px;
+            padding: 6px 4px 4px 4px;
+            box-shadow: 0 1px 4px #b2bfff22;
         }
         .input-row .input-top {
             display: flex;
@@ -163,15 +163,15 @@
         }
         /* Remove custom button alignment in input-bottom to fix jumping/click issues */
         select, input[type=text], input[type=number] {
-            padding: 12px;
-            margin-right: 8px;
-            border-radius: 10px;
-            border: 1.5px solid #b2bfff;
+            padding: 7px;
+            margin-right: 4px;
+            border-radius: 6px;
+            border: 1px solid #b2bfff;
             background: #f8fafc;
-            font-size: 1.08em;
+            font-size: 0.98em;
             font-family: 'Segoe UI', Arial, sans-serif;
             transition: border 0.2s, box-shadow 0.2s;
-            box-shadow: 0 1px 4px #b2bfff22;
+            box-shadow: 0 1px 2px #b2bfff22;
         }
         select:focus, input[type=text]:focus, input[type=number]:focus {
             border: 2px solid #2575fc;
@@ -179,15 +179,15 @@
             box-shadow: 0 2px 8px #2575fc33;
         }
         button {
-            padding: 12px 32px;
+            padding: 7px 16px;
             background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
             color: #fff;
             border: none;
-            border-radius: 50px;
-            font-size: 1.12em;
+            border-radius: 20px;
+            font-size: 1em;
             cursor: pointer;
             transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
-            box-shadow: 0 2px 8px rgba(106,17,203,0.08);
+            box-shadow: 0 1px 4px rgba(106,17,203,0.08);
         }
         button:hover {
             background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
@@ -204,11 +204,11 @@
         .footer {
             text-align: center;
             color: #b2bfff;
-            font-size: 1em;
+            font-size: 0.85em;
             margin: 0;
             letter-spacing: 0.5px;
             opacity: 0.85;
-            padding: 18px 0 10px 0;
+            padding: 6px 0 4px 0;
             background: transparent;
         }
         .query-history-label {
@@ -223,11 +223,11 @@
             background: linear-gradient(90deg, #e0e7ff 0%, #f8fafc 100%);
             border: 1.5px solid #b2bfff;
             border-radius: 10px;
-            font-size: 1.08em;
+            font-size: 0.95em;
             color: #222;
             font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
-            padding: 10px 12px;
-            box-shadow: 0 1px 4px #b2bfff22;
+            padding: 4px 6px;
+            box-shadow: 0 1px 2px #b2bfff22;
         }
         @media (max-width: 900px) {
             .chat-container {
@@ -240,21 +240,21 @@
         @media (max-width: 700px) {
             .chat-container {
                 max-width: 100vw;
-                padding: 6px 1vw 6px 1vw;
-                border-radius: 12px;
-                margin-top: 10px;
+                padding: 2px 0.5vw 2px 0.5vw;
+                border-radius: 8px;
+                margin-top: 0;
             }
             .messages {
-                max-height: 38vh;
+                max-height: 28vh;
             }
-            .bubble { font-size: 0.98em; }
-            .avatar { width: 32px; height: 32px; font-size: 1.1em; }
-            button { padding: 10px 18px; font-size: 1em; }
+            .bubble { font-size: 0.95em; }
+            .avatar { width: 22px; height: 22px; font-size: 0.9em; }
+            button { padding: 6px 10px; font-size: 0.95em; }
             .input-row {
                 flex-direction: column;
                 align-items: stretch;
-                gap: 8px;
-                padding: 8px 4px 6px 4px;
+                gap: 2px;
+                padding: 2px 2px 2px 2px;
             }
             .input-row .input-top input[type="text"] {
                 min-width: 0;
@@ -263,9 +263,9 @@
             .input-row .input-bottom {
                 flex-direction: column;
                 align-items: stretch;
-                gap: 8px;
+                gap: 2px;
             }
-            #query_history_text { font-size: 0.98em; }
+            #query_history_text { font-size: 0.92em; }
         }
     </style>
 </head>
