@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.log
+*.sqlite3
+*.db
+
+# Virtual environments
+.venv/
+venv/
+groqenv/
+.groqenv/
+ENV/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment/config
+.env
+.env.*
+*.env
+
+# Flask
+instance/
+*.db
+
+# Misc
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Node
+node_modules/
+
+# Coverage
+htmlcov/
+.coverage
+.tox/
+
+# Test
+*.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Others
+*.orig
+*.rej
+
+# Ignore history
+.history
